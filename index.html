@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular js</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="myApp.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <!--  Model will pass the value to a variable   -->
+    <h1>
+        {{prefix + " " + name}}
+    </h1>
+
+
+    <p> First-name: <input type="text" ng-model="essay"></p>
+    <p>last-name: <input type="text" ng-model="lastName"></p>
+    <!--    Bind gets the data from a variable and displays it-->
+    <p ng-bind="essay"></p>
+    <p ng-bind="firstName"></p>
+    <p ng-bind="lastName"></p>
+
+    <p>last-name: <textarea type="text" ng-model="essay"/></p>
+    <p ng-bind="lastName"></p>
+</div>
+
+
+</body>
+</html>
